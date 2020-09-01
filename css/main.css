@@ -1,15 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    transition: all 0.25s ease;
 }
 body{
    font-family: sans-serif;
    margin: 0; 
-}
-.container-main {
-    height: 100vh;
-    width: 100%;
-    border: 1px solid transparent;
 }
 header{
     padding: 2em 0;
@@ -18,9 +14,9 @@ header{
     border-bottom: 1px transparent;
     position: fixed;
     color: #fff;
-    font-size: 1.2em;
-}
+    font-size: 1.5em;
 
+}
 .header{
     display: flex;
     margin: 0 auto;
@@ -28,20 +24,48 @@ header{
     border-style: solid;
     border-left-width: 100px;
     border-right-width: 100px;
+    font-family: 'Open Sans Condensed',sans-serif;
 }
 .header-info{
     margin-left: auto;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    font-size: 1.1em;
 }
 li{
     display: inline;
     padding-left: 1em;
 }
-.anna{
+.anna {
     height: 100vh;
     width: 100%;
     background: #778899 url(/src/anna_photo.jpg) no-repeat center center;
     background-size: cover;
-    
 }
-
-
+.anna-main {
+    height: 100vh;
+    width: 99%;
+    border: 1px solid transparent;
+    overflow: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0.8;
+}
+.anna>.anna-main>.anna-main-text>p {
+    font-size: 3em;
+}
+.anna-body{
+    margin: 0 auto;
+    border-color: transparent;
+    border-style: solid;
+    border-left-width: 100px;
+    border-right-width: 100px;
+    text-align: justify;
+}
