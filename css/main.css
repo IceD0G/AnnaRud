@@ -13,8 +13,10 @@ header{
     background: transparent;
     border-bottom: 1px transparent;
     position: fixed;
+    text-decoration: none;
     color: #fff;
     font-size: 1.5em;
+    z-index: 100;
 
 }
 .header{
@@ -29,9 +31,10 @@ header{
 .header-info{
     margin-left: auto;
 }
-a{
-    text-decoration: none;
+.header-logo>a,
+.header-info>ul>li>a{
     color: #fff;
+    text-decoration: none;
 }
 a:hover{
     font-size: 1.1em;
@@ -40,7 +43,7 @@ li{
     display: inline;
     padding-left: 1em;
 }
-.anna {
+.anna{
     height: 100vh;
     width: 100%;
     background: #778899 url(/src/anna_photo.jpg) no-repeat center center;
@@ -50,8 +53,6 @@ li{
     height: 100vh;
     width: 99%;
     border: 1px solid transparent;
-    overflow: hidden;
-    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,11 +62,42 @@ li{
 .anna>.anna-main>.anna-main-text>p {
     font-size: 3em;
 }
-.anna-body{
+.anna-portofio{
     margin: 0 auto;
     border-color: transparent;
     border-style: solid;
     border-left-width: 100px;
     border-right-width: 100px;
+
+}
+.anna-portofio-works{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.anna-portofio-works-ex{
+    width: calc(33% - 20px);
+    margin-bottom: 50px;
+    border: 1px solid greenyellow;
+    text-align: center;
+}
+.anna-profile{
+    border-color: transparent;
+    border-style: solid;
+    border-left-width: 100px;
+    border-right-width: 100px;
+}
+.anna-profile-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.slider,
+.discription{
+    width: calc(50% - 30px);
+    border: 1px solid;
+}
+.discription{
     text-align: justify;
 }
