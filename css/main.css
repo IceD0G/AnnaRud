@@ -1,0 +1,21 @@
+body{
+   font-family: sans-serif;
+   margin: 0; 
+}
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+    /* border: 1px solid #000; */
+}
+.header-info{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.header-info-portfolio,
+.header-info-about-me,
+.header-info-contact{
+    margin: auto;
+}
+
