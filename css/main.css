@@ -18,6 +18,7 @@ header{
     color: #fff;
     font-size: 1.5em;
     z-index: 100;
+    border: 1px solid #fff;
 
 }
 .header{
@@ -94,11 +95,14 @@ li{
     text-align: center;
     align-items: center;
 }
-
+.anna-portofio-works-ex{
+    font-size: 30px;
+}
 .slider{
     overflow: hidden;
     width: 35%;
     margin: auto;
+    position: relative;
 }
 .slider-slide {
     display: flex;
@@ -109,7 +113,26 @@ li{
     height: 100%;
     width: auto;
 }
+.prevBtn{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 10;
+    font-size: 30px;
+    color: greenyellow;
+    cursor: pointer;
+}
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 10;
+    font-size: 30px;
+    color: greenyellow;
+    cursor: pointer;
+}
 .discription{
     width: 50%;
     text-align: justify;
+    font-size: 20px;
 }
