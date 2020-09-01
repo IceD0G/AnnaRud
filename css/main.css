@@ -1,21 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
    font-family: sans-serif;
    margin: 0; 
 }
+.container-main {
+    height: 100vh;
+    width: 100%;
+    border: 1px solid transparent;
+}
+header{
+    padding: 2em 0;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px transparent;
+    position: fixed;
+    color: #fff;
+    font-size: 1.2em;
+}
+
 .header{
     display: flex;
-    justify-content: center;
-    padding: 1.5em;
-    /* border: 1px solid #000; */
+    margin: 0 auto;
+    border-color: transparent;
+    border-style: solid;
+    border-left-width: 100px;
+    border-right-width: 100px;
 }
 .header-info{
-    display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
+}
+li{
+    display: inline;
+    padding-left: 1em;
+}
+.anna{
+    height: 100vh;
+    width: 100%;
+    background: #778899 url(/src/anna_photo.jpg) no-repeat center center;
+    background-size: cover;
     
 }
-.header-info-portfolio,
-.header-info-about-me,
-.header-info-contact{
-    margin: auto;
-}
+
 
