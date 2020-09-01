@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     transition: all 0.25s ease;
+    box-sizing: border-box;
 }
 body{
    font-family: sans-serif;
@@ -93,11 +94,22 @@ li{
     text-align: center;
     align-items: center;
 }
-.slider,
-.discription{
-    width: calc(50% - 30px);
-    border: 1px solid;
+
+.slider{
+    overflow: hidden;
+    width: 35%;
+    margin: auto;
+}
+.slider-slide {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+.slider-slide>img{
+    height: 100%;
+    width: auto;
 }
 .discription{
+    width: 50%;
     text-align: justify;
 }
