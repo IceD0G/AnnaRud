@@ -54,7 +54,7 @@ li{
 }
 .anna-main {
     height: 100vh;
-    width: 99%;
+    width: 100%;
     border: 1px solid transparent;
     display: flex;
     justify-content: center;
@@ -182,4 +182,10 @@ footer{
 }
 .fab:hover{
     opacity: 1;
+}
+
+/* media queries */
+
+@media all{
+    
 }
