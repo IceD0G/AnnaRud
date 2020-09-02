@@ -27,7 +27,7 @@ header{
     border-color: transparent;
     border-style: solid;
     border-left-width: 100px;
-    border-right-width: 100px;
+    border-right-width: 120px;
     font-family: 'Open Sans Condensed',sans-serif;
 }
 .header-info{
@@ -48,7 +48,7 @@ li{
 .anna{
     height: 100vh;
     width: 100%;
-    background: #778899 url(/src/anna_photo.jpg) no-repeat center center;
+    background: #778899 url(../src/anna_photo.jpg) no-repeat center center;
     background-size: cover;
 }
 .anna-main {
@@ -103,7 +103,7 @@ li{
 }
 .slider{
     overflow: hidden;
-    width: 35%;
+    width: 30%;
     margin: auto;
     position: relative;
 }
@@ -141,7 +141,6 @@ li{
 }
 .anna-contact{
     padding: 0 100px;
-    background-color: #000000;
-    border: 1px solid #fff;
+
 
 }
