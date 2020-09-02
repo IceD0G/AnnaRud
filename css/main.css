@@ -15,11 +15,9 @@ header{
     border-bottom: 1px transparent;
     position: fixed;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 1.5em;
     z-index: 100;
-    border: 1px solid #fff;
-
 }
 .header{
     display: flex;
@@ -38,18 +36,21 @@ header{
     color: #fff;
     text-decoration: none;
 }
-a:hover{
+.header-logo>a:hover,
+.header-info>ul>li>a:hover {
     font-size: 1.1em;
 }
 li{
     display: inline;
     padding-left: 1em;
 }
-.anna{
+.anna_r{
     height: 100vh;
     width: 100%;
     background: #778899 url(../src/anna_photo.jpg) no-repeat center center;
     background-size: cover;
+    z-index: 2;
+    position: relative;
 }
 .anna-main {
     height: 100vh;
@@ -61,11 +62,11 @@ li{
     color: #fff;
     opacity: 0.8;
 }
-.anna>.anna-main>.anna-main-text>p {
+.anna_r>.anna-main>.anna-main-text>p {
     font-size: 3em;
 }
 .anna-portofio{
-    margin: 0 auto;
+    margin: 1em auto 0;
     border-color: transparent;
     border-style: solid;
     border-left-width: 100px;
@@ -87,13 +88,13 @@ li{
 .anna-portofio-works-ex>img {
     height: 100%;
     width: 100%;
-
 }
 .anna-profile{
     border-color: transparent;
     border-style: solid;
     border-left-width: 100px;
     border-right-width: 100px;
+    margin-bottom: 2em;
 }
 .anna-profile-content{
     display: flex;
@@ -141,6 +142,44 @@ li{
 }
 .anna-contact{
     padding: 0 100px;
-
-
+}
+.anna_u{
+    margin: 0 0 12em;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    border-bottom: 1px solid #dbdbdb;
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    padding: 2.5em 100px;
+    position: fixed;
+    z-index: 1;
+}
+.footer-inner{
+    display: flex;
+}
+.footer-inner-social{
+    margin-left: auto;
+}
+.footer-inner-info>h3,
+.footer-inner-info>h4{
+    margin-bottom: 1.5em;
+}
+.fab{
+    opacity: .5;
+    transition: opacity .2s linear;
+    padding: 1em 1em 0 0;
+}
+.fa-vk{
+    color:#405DE6
+}
+.fa-instagram{
+    color: #C13584;
+    ;
+}
+.fab:hover{
+    opacity: 1;
 }
