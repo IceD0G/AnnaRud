@@ -80,7 +80,11 @@
              </div>
          </div>
          <div class="anna-contact">
-             <form action="mail.php"></form>
+             <form action="mail.php" method="POST">
+                 <input type="text" name="user_name" placeholder="Введите имя">
+                 <input type="text" name="user_email" placeholder="Введите email">
+                 <button type="submit">Отправить</button>
+             </form>
          </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
