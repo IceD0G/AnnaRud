@@ -79,9 +79,15 @@ li{
 }
 .anna-portofio-works-ex{
     width: calc(33% - 20px);
-    margin-bottom: 50px;
-    border: 1px solid greenyellow;
+    height: 600px;
+    margin: 0 20px 80px 0;
     text-align: center;
+    
+}
+.anna-portofio-works-ex>img {
+    height: 100%;
+    width: 100%;
+
 }
 .anna-profile{
     border-color: transparent;
@@ -94,9 +100,6 @@ li{
     justify-content: space-between;
     text-align: center;
     align-items: center;
-}
-.anna-portofio-works-ex{
-    font-size: 30px;
 }
 .slider{
     overflow: hidden;
