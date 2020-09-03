@@ -1,29 +1,50 @@
 const header = document.querySelectorAll('header')
 const links = document.querySelectorAll('.header-logo>p,.header-info>ul>li>p')
-const linkToHome = document.querySelector('.header_Home')
-const linkToPortfolio = document.querySelector('.header_Portf')
-const linkToProfile = document.querySelector('.header_Prof')
 
 // изменения в шапке при скролле
 window.addEventListener('scroll',()=>{
-    if (window.scrollY >= 10) {
-        header[0].style.background = '#fff'    
-        header[0].style.padding = '1em 0'  
-        for (let index = 0; index < links.length; index++) {
-            links[index].style.color = '#000'
-            links[1].style.display = 'inline'
-        }  
+    if (window.matchMedia('(max-width: 768px)').matches) { 
+        if (window.scrollY >= 10) {
+            header[0].style.background = '#fff'
+            header[0].style.padding = '0.5em 0'
+            for (let index = 0; index < links.length; index++) {
+                links[index].style.color = '#000'
+                links[1].style.display = 'inline'
+            }
+        } else {
+            header[0].style.background = 'transparent'
+            header[0].style.padding = '1em 0'
+            for (let index = 0; index < links.length; index++) {
+                links[1].style.display = 'none'
+                links[index].style.color = '#fff'
+            }
+        }
     } else{
-        header[0].style.background = 'transparent' 
-        header[0].style.padding = '2em 0'
-        for (let index = 0; index < links.length; index++) {
-            links[1].style.display = 'none'
-            links[index].style.color = '#fff'
-        }  
-    } 
+         if (window.scrollY >= 10) {
+             header[0].style.background = '#fff'
+             header[0].style.padding = '1em 0'
+             for (let index = 0; index < links.length; index++) {
+                 links[index].style.color = '#000'
+                 links[1].style.display = 'inline'
+             }
+         } else {
+             header[0].style.background = 'transparent'
+             header[0].style.padding = '2em 0'
+             for (let index = 0; index < links.length; index++) {
+                 links[1].style.display = 'none'
+                 links[index].style.color = '#fff'
+             }
+         }
+    }
+   
 })
-// console.log(links)
-const anna_r = document.querySelector('.anna_r'),
+
+
+//плавное движение якорных ссылок
+const linkToHome = document.querySelector('.header_Home'),
+    linkToPortfolio = document.querySelector('.header_Portf'),
+    linkToProfile = document.querySelector('.header_Prof'),
+    anna_r = document.querySelector('.anna_r'),
     anna_r_stop = anna_r.getBoundingClientRect().height,
     anna_portfolio = document.querySelector('.anna-portfolio'),
     anna_profile_stop = anna_r_stop + anna_portfolio.getBoundingClientRect().height
@@ -47,4 +68,13 @@ linkToProfile.addEventListener('click', () => window.scrollTo({
     behavior: 'smooth',
 }))
 
-console.log(anna_profile_stop)
+const headerMenu = document.querySelector('.header-info')
+const burger = document.querySelector('.burger')
+
+burger.addEventListener('click', () =>{
+    headerMenu.classList.toggle('active')
+    burger.classList.toggle('active')
+    document.querySelector('body').classList.toggle('lock')
+})
+
+console.log(headerMenu)
