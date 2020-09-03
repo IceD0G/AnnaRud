@@ -1,11 +1,12 @@
 const header = document.querySelectorAll('header')
 const links = document.querySelectorAll('.header-logo>p,.header-info>ul>li>p')
 
+
 // изменения в шапке при скролле
 window.addEventListener('scroll',()=>{
     if (window.matchMedia('(max-width: 768px)').matches) { 
         if (window.scrollY >= 10) {
-            header[0].style.background = '#fff'
+            header[0].style.background = '#dadada'
             header[0].style.padding = '0.5em 0'
             for (let index = 0; index < links.length; index++) {
                 links[index].style.color = '#000'
@@ -21,7 +22,7 @@ window.addEventListener('scroll',()=>{
         }
     } else{
          if (window.scrollY >= 10) {
-             header[0].style.background = '#fff'
+             header[0].style.background = '#dadada'
              header[0].style.padding = '1em 0'
              for (let index = 0; index < links.length; index++) {
                  links[index].style.color = '#000'
@@ -57,17 +58,31 @@ const linkToHome = document.querySelector('.header_Home'),
 linkToHome.addEventListener('click', () => window.scrollTo({
     top: 0,
     behavior: 'smooth',
-}))
+}))    
+linkToHome.addEventListener('click', () =>{
+    headerMenu.classList.remove('active')
+    burger.classList.remove('active')
+})
 //ссылка до портфолио
 linkToPortfolio.addEventListener('click', () => window.scrollTo({
     top: anna_r_stop,
     behavior: 'smooth',
 }))
+linkToPortfolio.addEventListener('click', () => {
+    headerMenu.classList.remove('active')
+    burger.classList.remove('active')
+})
 linkToProfile.addEventListener('click', () => window.scrollTo({
     top: anna_profile_stop,
     behavior: 'smooth',
 }))
+linkToProfile.addEventListener('click', () => {
+    headerMenu.classList.remove('active')
+    burger.classList.remove('active')
+})
 
+
+//разворачивание и сворачивание меню бургера
 const headerMenu = document.querySelector('.header-info')
 const burger = document.querySelector('.burger')
 
@@ -75,6 +90,7 @@ burger.addEventListener('click', () =>{
     headerMenu.classList.toggle('active')
     burger.classList.toggle('active')
     document.querySelector('body').classList.toggle('lock')
+
 })
 
-console.log(headerMenu)
+console.log(burger)
