@@ -38,6 +38,29 @@ header{
 .header-info>ul{
     display: flex;
 }
+@media (max-width: 500px){
+    .header-info{
+        display: none
+    }
+    .burger{
+        display: inline;
+    }
+    .header-logo>p,
+    .header-info>ul>li>p {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .header-logo>p:hover,
+    .header-info>ul>li>p:hover {
+        font-size: 1.1em;
+    }
+
+    li {
+        display: inline;
+        padding-left: 1em;
+    }
+}
 .header-logo>p,
 .header-info>ul>li>p{
     color: #fff;
@@ -194,10 +217,4 @@ footer{
 }
 .fab:hover{
     opacity: 1;
-}
-
-/* media queries */
-
-@media all{
-    
 }
