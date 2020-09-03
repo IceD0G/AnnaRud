@@ -66,9 +66,9 @@ header{
     color: #fff;
     text-decoration: none;
 }
-.header-logo>p:hover,
 .header-info>ul>li>p:hover {
     font-size: 1.1em;
+    cursor: pointer;    
 }
 li{
     display: inline;
@@ -96,7 +96,7 @@ li{
     font-size: 3em;
 }
 .anna-portfolio{
-    margin: 1em auto 0;
+    padding: 1em auto;
     border-color: transparent;
     border-style: solid;
     border-left-width: 100px;
