@@ -196,9 +196,7 @@ li{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-/* @media (max-width 1024px){
-    
-} */
+
 .anna-portfolio-works-ex{
     width: calc(33% - 20px);
     height: 600px;
@@ -206,29 +204,77 @@ li{
     position: relative;
     text-align: center;
 }
+@media (max-width: 1024px) {
+    .anna-portfolio-works-ex {
+        width: calc(50% - 20px);
+        height: 500px;
+        margin: 0 0 80px 0;
+        position: relative;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .anna-portfolio-works-ex {
+        width: calc(80% - 20px);
+        height: 500px;
+        margin: 0 auto 80px;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+    }
+}
 .anna-portfolio-works-ex>img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 .anna-profile{
-    border-color: transparent;
-    border-style: solid;
-    border-left-width: 100px;
-    border-right-width: 100px;
+    padding: 0 100px;
     margin-bottom: 2em;
 }
+@media (max-width: 1024px) {
+    .anna-profile {
+        padding: 0 50px;
+        margin-bottom: 2em;
+    }
+}
 .anna-profile-content{
+    margin-top: 1em;
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
+}
+@media (max-width: 768px) {
+    .anna-profile-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 .slider{
     overflow: hidden;
     width: 39%;
     margin: auto;
     position: relative;
+}
+@media (max-width: 1024px) {
+    .slider {
+        overflow: hidden;
+        width: 60%;
+        margin: auto;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        overflow: hidden;
+        width: 80%;
+        margin: auto;
+        position: relative;
+    }
 }
 .slider-slide {
     display: flex;
@@ -262,6 +308,21 @@ li{
     width: 50%;
     text-align: justify;
     font-size: 20px;
+}
+@media (max-width: 1024px) {
+    .discription {
+        width: 35%;
+        text-align: justify;
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .discription {
+        margin-top: 1em;
+        width: 80%;
+        text-align: justify;
+        font-size: 20px;
+    }
 }
 .anna-contact{
     padding: 0 100px;
