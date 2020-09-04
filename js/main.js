@@ -62,6 +62,7 @@ linkToHome.addEventListener('click', () => window.scrollTo({
 linkToHome.addEventListener('click', () =>{
     headerMenu.classList.remove('active')
     burger.classList.remove('active')
+    document.querySelector('body').classList.remove('lock')
 })
 //ссылка до портфолио
 linkToPortfolio.addEventListener('click', () => window.scrollTo({
@@ -71,6 +72,7 @@ linkToPortfolio.addEventListener('click', () => window.scrollTo({
 linkToPortfolio.addEventListener('click', () => {
     headerMenu.classList.remove('active')
     burger.classList.remove('active')
+    document.querySelector('body').classList.remove('lock')
 })
 linkToProfile.addEventListener('click', () => window.scrollTo({
     top: anna_profile_stop,
@@ -79,6 +81,7 @@ linkToProfile.addEventListener('click', () => window.scrollTo({
 linkToProfile.addEventListener('click', () => {
     headerMenu.classList.remove('active')
     burger.classList.remove('active')
+    document.querySelector('body').classList.remove('lock')
 })
 
 
