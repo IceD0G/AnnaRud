@@ -315,7 +315,7 @@ li{
     text-align: center;
     align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
     .anna-profile-content {
         display: flex;
         flex-direction: column;
@@ -325,9 +325,42 @@ li{
 }
 .slider{
     overflow: hidden;
-    width: 39%;
+    width: 34%;
     margin: auto;
     position: relative;
+}
+
+@media (min-width: 1920px) {
+    .slider {
+        overflow: hidden;
+        width: 34%;
+        margin: auto;
+        position: relative;
+    }
+}
+@media (min-width: 1960px) {
+    .slider {
+        overflow: hidden;
+        width: 28%;
+        margin: auto;
+        position: relative;
+    }
+}
+@media (min-width: 2340px) {
+    .slider {
+        overflow: hidden;
+        width: 25%;
+        margin: auto;
+        position: relative;
+    }
+}
+@media (max-width: 1650px) {
+    .slider {
+        overflow: hidden;
+        width: 42%;
+        margin: auto;
+        position: relative;
+    }
 }
 @media (max-width: 1440px) {
     .slider {
@@ -342,15 +375,22 @@ li{
         width: 50%;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
     .slider {
         overflow: hidden;
         width: 60%;
-        margin: auto;
+        margin: 0;
         position: relative;
     }
 }
-
+@media (max-width: 910px) {
+    .slider {
+        overflow: hidden;
+        width: 75%;
+        margin: 0;
+        position: relative;
+    }
+}
 @media (max-width: 768px) {
     .slider {
         overflow: hidden;
@@ -359,12 +399,7 @@ li{
         position: relative;
     }
 }
-@media (max-width: 425px) {
-    .slider {
-        width: 100%;
-    }
-}
-@media (max-width: 375px) {
+@media (max-width: 625px) {
     .slider {
         display: none;
     }
@@ -410,7 +445,7 @@ li{
 }
 @media (max-width: 1024px) {
     .discription {
-        width: 35%;
+        width: 85%;
         text-align: justify;
         font-size: 20px;
     }
