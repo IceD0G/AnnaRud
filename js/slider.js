@@ -38,3 +38,10 @@ caruselSlide.addEventListener('transitionend', () => {
         caruselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'
     }
 })
+
+let interval = setInterval(() => {
+    if (counter >= caruselImages.length - 1) return
+    caruselSlide.style.transition = 'transform 0.4s ease-in-out'
+    counter++
+    caruselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'
+}, 3000);

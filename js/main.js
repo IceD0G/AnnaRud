@@ -1,13 +1,14 @@
 const header = document.querySelectorAll('header')
 const links = document.querySelectorAll('.header-logo>p,.header-info>ul>li>p')
-
+let disc = document.querySelectorAll('.anna-portfolio-works-ex-disc'),
+    layout = document.querySelectorAll('.anna-portfolio-works-ex-layout')
 
 // изменения в шапке при скролле
 window.addEventListener('scroll',()=>{
     if (window.matchMedia('(max-width: 768px)').matches) { 
         if (window.scrollY >= 10) {
             header[0].style.background = '#dadada'
-            header[0].style.padding = '0.5em 0'
+            header[0].style.padding = '1em 0'
             for (let index = 0; index < links.length; index++) {
                 links[index].style.color = '#000'
                 links[1].style.display = 'inline'
@@ -21,6 +22,26 @@ window.addEventListener('scroll',()=>{
             }
         }
     } else{
+        for (let i = 0; i < layout.length; i++) {
+            layout[i].addEventListener('mouseenter', () => {
+                layout[i].style.opacity = '0.6'
+                disc[i].style.opacity = '1'
+            })
+            disc[i].addEventListener('mouseenter', () => {
+                layout[i].style.opacity = '0.6'
+                disc[i].style.opacity = '1'
+            })
+        }
+        for (let i = 0; i < layout.length; i++) {
+            layout[i].addEventListener('mouseleave', () => {
+                layout[i].style.opacity = '0'
+                disc[i].style.opacity = '0'
+            })
+            disc[i].addEventListener('mouseleave', () => {
+                layout[i].style.opacity = '0'
+                disc[i].style.opacity = '0'
+            })
+        }
          if (window.scrollY >= 10) {
              header[0].style.background = '#dadada'
              header[0].style.padding = '1em 0'
@@ -53,7 +74,6 @@ const linkToHome = document.querySelector('.header_Home'),
 
 
 //якорные ссылки
-
 //ссылка на начало документа
 linkToHome.addEventListener('click', () => window.scrollTo({
     top: 0,
@@ -95,5 +115,3 @@ burger.addEventListener('click', () =>{
     document.querySelector('body').classList.toggle('lock')
 
 })
-
-console.log(burger)
